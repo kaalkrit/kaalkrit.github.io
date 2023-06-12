@@ -2,11 +2,6 @@ p,ul,dl,h1,h2 {
     padding: 0;
     margin: 0;
 }
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
 
 body { 
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
