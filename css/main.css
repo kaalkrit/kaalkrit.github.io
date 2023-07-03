@@ -12,6 +12,7 @@ body {
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
+    pudding-right: 20px:
 }
 
 a       { color: #0275d8; text-decoration: none; }
@@ -42,6 +43,7 @@ h1 { margin-bottom: 1.5rem; }
 
 .collapse {
       display: none;
+    color:#222;
     }
     .collapsed {
       display: block;
