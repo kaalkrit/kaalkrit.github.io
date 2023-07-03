@@ -1,13 +1,12 @@
-<script>
-$(document).ready(function(){
-  $(".btn-primary").click(function(){
-    $(".collapse").collapse('toggle');
-  });
-  $(".btn-success").click(function(){
-    $(".collapse").collapse('show');
-  });
-  $(".btn-warning").click(function(){
-    $(".collapse").collapse('hide');
-  });
-});
-</script>
+ function toggleCollapse() {
+      var collapseDiv = document.getElementById("publication-collapse");
+      var collapseBtn = document.getElementById("collapse-btn");
+
+      if (collapseDiv.style.display === "none") {
+        collapseDiv.style.display = "block";
+        collapseBtn.innerHTML = "Collapse";
+      } else {
+        collapseDiv.style.display = "none";
+        collapseBtn.innerHTML = "Expand";
+      }
+    }
