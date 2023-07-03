@@ -38,3 +38,16 @@ h1 { margin-bottom: 1.5rem; }
     border: none;
     margin-bottom: 40px;
 }
+
+
+.collapse {
+      display: none;
+    }
+    .collapsed {
+      display: block;
+    }
+    .collapse-btn {
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: underline;
+    }
