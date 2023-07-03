@@ -1,6 +1,6 @@
- function toggleCollapse() {
-      var collapseDiv = document.getElementById("publication-collapse");
-      var collapseBtn = document.getElementById("collapse-btn");
+function toggleCollapse(id) {
+      var collapseDiv = document.getElementById("publication-" + id);
+      var collapseBtn = document.getElementById("collapse-btn-" + id);
 
       if (collapseDiv.style.display === "none") {
         collapseDiv.style.display = "block";
