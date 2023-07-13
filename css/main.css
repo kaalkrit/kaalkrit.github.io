@@ -6,9 +6,9 @@ body, html {
 
 /* Set background color and font styles */
 body {
-  background-color: #f1f1f1;
+  background-color: #f4b41a;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: #143d59;
 }
 
 /* Center the content */
@@ -20,7 +20,7 @@ body {
 
 /* Style the navigation */
 .navigation {
-  background-color: #e3f2fd;
+  background-color: #143d59;
   padding: 10px;
   display: flex;
   justify-content: center;
