@@ -2,11 +2,12 @@ body{
     color: #333;
     background-color: #fdfefa;
     font-family: Alegreya,serif;
-  margin: 0;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+    max-width: 960px;
 }
 
 
