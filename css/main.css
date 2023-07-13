@@ -1,27 +1,52 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color or image */
 body {
-  margin:0;
-  display: auto;
-  justify-content: center;
-  align-items: center;
-}
-   
-.container{
-   width: 50%;
-  margin: 25% 25%;
-}
-p,ul,dl,h1,h2{
-    padding: 0;
-    margin: 0;
+  background-color: #f1f1f1; /* Replace with desired background color */
 }
 
-
-a       { color: #0275d8; text-decoration: none; }
-a:hover { color: #013884; text-decoration: underline; }
-
-ul{
-    margin-bottom: 20px;
-    padding-left: 20px;
+/* Center the page content with a wide margin */
+.container {
+  max-width: 960px; /* Adjust the maximum width as desired */
+  margin: 0 auto;
+  padding: 25px; /* Adjust the padding as desired */
 }
+
+/* Style the navigation */
+nav {
+  background-color: #333; /* Replace with desired background color */
+  color: #fff; /* Replace with desired text color */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px; /* Adjust the spacing between navigation items */
+}
+
+nav ul li a {
+  color: #fff; /* Replace with desired text color */
+  text-decoration: none;
+  padding: 5px 10px; /* Adjust the padding as desired */
+}
+
+/* Style other sections as needed */
+h2 {
+  color: #333; /* Replace with desired heading color */
+  font-size: 24px; /* Adjust the font size as desired */
+  margin-bottom: 10px; /* Adjust the spacing between headings and content */
+}
+
+/* Add more CSS rules for other elements and sections as required */
 
 p {
     margin-bottom: 20px;
