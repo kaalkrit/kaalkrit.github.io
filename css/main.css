@@ -4,9 +4,11 @@ body, html {
   padding: 0;
 }
 
-/* Set background color for the body */
+/* Set background color and font styles */
 body {
   background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 /* Center the content */
@@ -20,31 +22,35 @@ body {
 .navigation {
   background-color: #e3f2fd;
   padding: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .navigation a {
   color: #333;
   text-decoration: none;
-  margin-right: 10px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+  color: #007bff;
 }
 
 /* Style the headings */
 h1 {
-  color: #333;
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 h2 {
-  color: #333;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
 /* Style the paragraphs */
 p {
-  color: #666;
-  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -58,10 +64,11 @@ ul {
 a {
   color: #007bff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #0056b3;
 }
 
 /* Add styles for image */
@@ -75,8 +82,17 @@ img.chalk {
 .collapse-btn {
   cursor: pointer;
   color: #007bff;
-  text-decoration: underline;
+  text-decoration: none;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.collapse-btn:hover {
+  color: #0056b3;
+}
+
+.collapse {
+  display: none;
 }
 
 /* Media query for responsive layout */
@@ -84,14 +100,12 @@ img.chalk {
   .container {
     padding: 15px;
   }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
 }
-
-
-.collapse {
-      display: none;
-    color:#222;
-    }
-    .collapsed {
-      display: block;
-    }
-   
