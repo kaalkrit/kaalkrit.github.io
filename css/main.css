@@ -7,7 +7,54 @@ body {
     margin: auto;
 }
 
+@media screen and (max-width: 1229px)
+.sidebar {
+    display: none;
+}
+.sidebar {
+       height: 100%;
+    position: fixed;
+    padding-top: 20px;
+    font-family: freight-sans-condensed-pro,Alegreya,serif;
+    font-size: 18px;
+    line-height: 22px;
+    width: 320px;
+    background: #422;
+    color: #c8b6b6;
+    display: none;
+}
+.sidebar .content{ font-family: freight-sans-condensed-pro,Alegreya,serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #c8b6b6;
+    display: block;
+    margin: 20px 40px;
+           }
+     .img-responsive {  font-family: freight-sans-condensed-pro,Alegreya,serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #c8b6b6;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    width: 240px;
+                     }
 
+
+    color: #c8b6b6;
+    display: block;
+.center-text {
+    text-align: center;
+}
+.narrow-font {
+    font-family: freight-sans-condensed-pro,Alegreya,serif;
+    font-size: 18px;
+    line-height: 22px;
+}
+div {
+    display: block;
+}
 .header {
 font-family: Alegreya,serif;
     font-size: 18px;
