@@ -58,49 +58,6 @@ div {
 
 
 
-
-
-
-.sidebar {
-    height: 100%;
-    position: fixed;
-    padding-top: 20px;
-    font-family: freight-sans-condensed-pro,Alegreya,serif;
-    font-size: 18px;
-    line-height: 22px;
-    width: 320px;
-    background: #422;
-    color: #c8b6b6;
-}
-
-.sidebar .content {
-    margin: 20px 40px
-px
-;
-}
-.narrow-font {
-    font-family: freight-sans-condensed-pro,Alegreya,serif;
-    font-size: 18px;
-    line-height: 22px;
-}
-.center-text {
-    text-align: center;
-}
-.narrow-font {
-    font-family: freight-sans-condensed-pro,Alegreya,serif;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-.center-text {
-    text-align: center;
-}
-
-
-
-
-
-
 p,ul,dl,h1,h2 {
     padding: 0;
     margin: 0;
