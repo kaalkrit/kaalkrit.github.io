@@ -44,15 +44,11 @@ body {
 
     color: #c8b6b6;
     display: block;
-.center-text {
+.center-text, .narrow-font{
     text-align: center;
-}
-.narrow-font {
     font-family: freight-sans-condensed-pro,Alegreya,serif;
     font-size: 18px;
     line-height: 22px;
-}
-div {
     display: block;
 }
 .header {
@@ -111,12 +107,41 @@ font-family: Alegreya,serif;
 }
 
 
-
-
-
-
-
-
+.social-icon-container {
+    font-family: freight-sans-condensed-pro,Alegreya,serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #c8b6b6;
+    display: block;
+    padding-left: 0;
+    text-align: center;
+}
+.sidebar .bootom-art{
+        font-family: freight-sans-condensed-pro,Alegreya,serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #c8b6b6;
+    width: 320px;
+    position: absolute;
+    left: 0;
+    bottom: 1em;
+}
+   
+.sidebar .floating-description { 
+    font-family: freight-sans-condensed-pro,Alegreya,serif;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    line-height: 17px;
+    margin: 0 0 4px -4px;
+    padding: 0 4px 0 4px;
+    color: #422;
+    border-left: 1px none #422;
+    width: 240px;
+    bottom: 2.5em;
+    position: fixed;
+                               }
+   
 
 p,ul,dl,h1,h2 {
     padding: 0;
