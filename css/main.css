@@ -13,7 +13,7 @@ body {
 .container {
   max-width: 960px; /* Adjust the maximum width as desired */
   margin: 0 auto;
-  padding: 25px; /* Adjust the padding as desired */
+  padding: 50px; /* Adjust the padding as desired */
 }
 
 /* Style the navigation */
