@@ -1,16 +1,15 @@
-body{
-    color: #333;
-    background-color: #fdfefa;
-    font-family: Alegreya,serif;
-  margin: auto;
+body {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-    max-width: 960px;
+  height: 100vh;
 }
 
-
+.container {
+  width: 50%;
+  margin: 0 25%;
+}
    
 
 p,ul,dl,h1,h2{
