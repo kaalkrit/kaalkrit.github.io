@@ -1,16 +1,7 @@
-@media screen and (max-width: 909px)
-.footer, .header {
-    padding: 0 20px 0 20px;
-}
-@media screen and (max-width: 1229px)
-.footer, .header {
-    padding: 0 40px 0 40px;
-}
-@media screen and (max-width: 1229px)
-.footer, .header {
-    display: block;
-}
-.footer, .header {
+.header {
+font-family: Alegreya,serif;
+    font-size: 18px;
+    line-height: 26px;
     display: none;
     background: #422;
     color: #c8b6b6;
@@ -18,27 +9,7 @@
     padding: 0 40px 0 360px;
     position: relative;
 }
-nav {
-    display: block;
-}
-body {
-    color: #333;
-    background-color: #fdfefa;
-    font-family: Alegreya,serif;
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-}
-
-@media screen and (max-width: 1229px)
-.footer .content, .header .content {
-    margin: auto;
-}
-@media screen and (max-width: 909px)
-.footer .content, .header .content {
-    padding-right: 0;
-}
-.footer .content, .header .content {
+.header .content {
     font-family: freight-sans-condensed-pro,Alegreya,serif;
     max-width: 550px;
     line-height: 1;
@@ -46,15 +17,47 @@ body {
     padding-bottom: 8px;
     padding-right: 280px;
 }
-div {
-    display: block;
-}
-
 .heading-font {
     font-family: 'Marcellus SC',sans-serif;
     text-transform: none;
     line-height: 1;
 }
+@media screen and (max-width: 1229px)
+.header .content {
+    margin: auto;
+}
+
+@media screen and (max-width: 909px)
+.header .content {
+    padding-right: 0;
+}
+
+@media screen and (max-width: 909px)
+ .header {
+    padding: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 1229px)
+ .header {
+    padding: 0 40px 0 40px;
+}
+@media screen and (max-width: 1229px)
+ .header {
+    display: block;
+}
+
+.header .center-dot:before {
+    color: #c8b6b6;
+    content: ".";
+    padding: 0 4px;
+    vertical-align: 15%;
+}
+
+
+
+
+
+
 
 
 
