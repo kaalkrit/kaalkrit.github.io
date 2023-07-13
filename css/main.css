@@ -102,10 +102,16 @@ img.chalk {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
+ hr{
+   height:2px;
+   border-width:0;
+   color:#143d59;
+   background-color:#143d59;
+ }
