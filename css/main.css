@@ -1,16 +1,18 @@
-body {
+body{
     color: #333;
     background-color: #fdfefa;
     font-family: Alegreya,serif;
-    font-size: 18px;
-    width:220px
-    line-height: 26px;
-    margin: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
+
 
    
 
-p,ul,dl,h1,h2 {
+p,ul,dl,h1,h2{
     padding: 0;
     margin: 0;
 }
@@ -19,7 +21,7 @@ p,ul,dl,h1,h2 {
 a       { color: #0275d8; text-decoration: none; }
 a:hover { color: #013884; text-decoration: underline; }
 
-ul {
+ul{
     margin-bottom: 20px;
     padding-left: 20px;
 }
