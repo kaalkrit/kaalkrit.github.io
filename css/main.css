@@ -1,13 +1,15 @@
 body {
+  margin:0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 50%;
-  margin: 25% 25%;
 }
    
-
+nav, div{
+   width: 50%;
+  margin: 25% 25%;
+}
 p,ul,dl,h1,h2{
     padding: 0;
     margin: 0;
