@@ -4,65 +4,86 @@ body, html {
   padding: 0;
 }
 
-/* Set a background color or image */
+/* Set background color for the body */
 body {
-  background-color: #f1f1f1; /* Replace with desired background color */
+  background-color: #f1f1f1;
 }
 
-/* Center the page content with a wide margin */
+/* Center the content */
 .container {
-  max-width: 960px; /* Adjust the maximum width as desired */
+  max-width: 960px;
   margin: 0 auto;
-  padding: 50px; /* Adjust the padding as desired */
+  padding: 25px;
 }
 
 /* Style the navigation */
-nav {
-  background-color: #333; /* Replace with desired background color */
-  color: #fff; /* Replace with desired text color */
+.navigation {
+  background-color: #e3f2fd;
+  padding: 10px;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px; /* Adjust the spacing between navigation items */
-}
-
-nav ul li a {
-  color: #fff; /* Replace with desired text color */
+.navigation a {
+  color: #333;
   text-decoration: none;
-  padding: 5px 10px; /* Adjust the padding as desired */
+  margin-right: 10px;
 }
 
-/* Style other sections as needed */
+/* Style the headings */
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
 h2 {
-  color: #333; /* Replace with desired heading color */
-  font-size: 24px; /* Adjust the font size as desired */
-  margin-bottom: 10px; /* Adjust the spacing between headings and content */
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-/* Add more CSS rules for other elements and sections as required */
-
+/* Style the paragraphs */
 p {
-    margin-bottom: 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
-h1,h2,h3,h4,h5 {
-    margin-bottom: 1rem;
-    font-weight: normal;
-    line-height: 1.1;
+/* Style the list */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
-h1 { margin-bottom: 1.5rem; }
 
-.chalk {
-    width: 100%;
-    border: none;
-    margin-bottom: 40px;
+/* Style the links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Add styles for image */
+img.chalk {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Add styles for collapsible sections */
+.collapse-btn {
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+/* Media query for responsive layout */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
 }
 
 
@@ -73,8 +94,4 @@ h1 { margin-bottom: 1.5rem; }
     .collapsed {
       display: block;
     }
-    .collapse-btn {
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: underline;
-    }
+   
