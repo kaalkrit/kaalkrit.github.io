@@ -27,14 +27,14 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #c8b6b6;
-    display: block;
+    display: none;
     margin: 20px 40px;
            }
      .img-responsive {  font-family: freight-sans-condensed-pro,Alegreya,serif;
     font-size: 18px;
     line-height: 22px;
     color: #c8b6b6;
-    display: block;
+  display: none;
     max-width: 100%;
     height: auto;
     margin: auto;
@@ -49,7 +49,7 @@ body {
     font-family: freight-sans-condensed-pro,Alegreya,serif;
     font-size: 18px;
     line-height: 22px;
-    display: block;
+    display: none;
 }
 .header {
 font-family: Alegreya,serif;
@@ -96,7 +96,7 @@ font-family: Alegreya,serif;
 }
 @media screen and (max-width: 1229px)
  .header {
-    display: block;
+    display: none;
 }
 
 .header .center-dot:before {
@@ -112,7 +112,7 @@ font-family: Alegreya,serif;
     font-size: 18px;
     line-height: 22px;
     color: #c8b6b6;
-    display: block;
+    display: none;
     padding-left: 0;
     text-align: center;
 }
@@ -129,7 +129,7 @@ font-family: Alegreya,serif;
    
 .sidebar .floating-description { 
     font-family: freight-sans-condensed-pro,Alegreya,serif;
-    display: block;
+    display: none;
     text-align: center;
     font-size: 16px;
     line-height: 17px;
