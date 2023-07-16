@@ -6,7 +6,7 @@ body, html {
 
 /* Set background color and font styles */
 body {
-  background-color: #f4b41a;
+  background-color: #fdf7e8;
   font-family: Arial, sans-serif;
   color: #143d59;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .navigation a {
-  color:  #f4b41a;
+  color:  #fdf7e8;
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s ease;
