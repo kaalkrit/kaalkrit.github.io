@@ -15,9 +15,14 @@
     <a href="/activity.html">Activity     </a> 
       <a href="/about.html">About     </a>
        <a href="/contact.html">Contact     </a> 
-        <ul>
-            <li><a href="\R_Resume,pdf" onclick="showShortCV()">Resume</a></li>
-            <li><a href="\R_CV.pdf" onclick="showLongCV()">CV</a></li>
+   <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Download</a>
+                <div class="dropdown-content">
+                    <a href="#resume" download="Resume.pdf">Resume</a>
+                    <a href="#cv" download="CV.pdf">CV</a>
+                </div>
+            </li>
         </ul>
       </li>
     </ul>
