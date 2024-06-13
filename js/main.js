@@ -10,3 +10,12 @@ function toggleCollapse(id) {
         collapseBtn.innerHTML = "Expand";
       }
     }
+function showShortCV() {
+    document.getElementById('short-cv').style.display = 'block';
+    document.getElementById('long-cv').style.display = 'none';
+}
+
+function showLongCV() {
+    document.getElementById('short-cv').style.display = 'none';
+    document.getElementById('long-cv').style.display = 'block';
+}
