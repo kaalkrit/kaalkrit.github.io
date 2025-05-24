@@ -167,3 +167,42 @@ nav ul li a:hover, .dropdown:hover .dropbtn {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.blog-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+
+.blog-card:hover {
+  transform: scale(1.02);
+}
+
+.blog-card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.blog-card .date {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.blog-card .excerpt {
+  margin: 1rem 0;
+}
+
+.read-more {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+}
