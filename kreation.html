@@ -234,13 +234,21 @@
             <div class="note-card">
                 <div class="note-header">
                     <i class="fas fa-dna"></i>
-                    <h3>Other Stuffs</h3>
+                    <h3>Others</h3>
                 </div>
                 <div class="note-content">
                     <div class="note-info">
-                        <p><strong>Subject:</strong> ...</p>
+                        <p><strong>Topic:</strong> ...</p>
                     </div>
                     <button class="download-btn" id="download3" disabled>
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                </div>
+            </div>
+             <div class="note-info">
+                        <p><strong>Topic:</strong> ...</p>
+                    </div>
+                    <button class="download-btn" id="download4" disabled>
                         <i class="fas fa-download"></i> Download
                     </button>
                 </div>
@@ -271,7 +279,7 @@
             downloadButtons.forEach(button => {
                 button.addEventListener('click', function() {
                     if (!this.disabled) {
-                        alert('Thank you for your payment of ₹1. Your download will start shortly.');
+                        alert('Your download will start shortly.');
                         // In a real implementation, this would trigger the actual download
                         // For demo purposes, we'll just show a success message
                     }
