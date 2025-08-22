@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes - Download Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            color: white;
+        }
+        
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .notes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        
+        .note-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .note-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        .note-header {
+            background: #2575fc;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .note-header i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .note-header h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+        
+        .note-content {
+            padding: 20px;
+        }
+        
+        .note-info {
+            margin-bottom: 15px;
+        }
+        
+        .note-info p {
+            margin: 8px 0;
+            color: #555;
+        }
+        
+        .agreement {
+            background: #f5f9ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #2575fc;
+        }
+        
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+        }
+        
+        .checkbox-container input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+        
+        .download-btn {
+            width: 100%;
+            padding: 12px;
+            background: #6a11cb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .download-btn i {
+            margin-right: 8px;
+        }
+        
+        .download-btn:hover {
+            background: #5a0fb8;
+        }
+        
+        .download-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+        
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            .notes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Study Notes Repository</h1>
+            <p>Download high-quality PDF notes for your studies. Just ₹1 per download!</p>
+        </header>
+        
+        <div class="notes-grid">
+            <!-- Note 1 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <i class="fas fa-calculator"></i>
+                    <h3>Mathematics Notes</h3>
+                </div>
+                <div class="note-content">
+                    <div class="note-info">
+                        <p><strong>Subject:</strong> Advanced Calculus</p>
+                        <p><strong>Pages:</strong> 45</p>
+                        <p><strong>Author:</strong> Prof. Sharma</p>
+                    </div>
+                    <div class="agreement">
+                        <p>By checking the box below, you agree to pay ₹1 for downloading this note.</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="agree1" class="agree-checkbox">
+                        <label for="agree1">I agree to pay ₹1 for this download</label>
+                    </div>
+                    <button class="download-btn" id="download1" disabled>
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Note 2 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <i class="fas fa-atom"></i>
+                    <h3>Physics Notes</h3>
+                </div>
+                <div class="note-content">
+                    <div class="note-info">
+                        <p><strong>Subject:</strong> Quantum Mechanics</p>
+                        <p><strong>Pages:</strong> 62</p>
+                        <p><strong>Author:</strong> Dr. Patel</p>
+                    </div>
+                    <div class="agreement">
+                        <p>By checking the box below, you agree to pay ₹1 for downloading this note.</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="agree2" class="agree-checkbox">
+                        <label for="agree2">I agree to pay ₹1 for this download</label>
+                    </div>
+                    <button class="download-btn" id="download2" disabled>
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Note 3 -->
+            <div class="note-card">
+                <div class="note-header">
+                    <i class="fas fa-dna"></i>
+                    <h3>Biology Notes</h3>
+                </div>
+                <div class="note-content">
+                    <div class="note-info">
+                        <p><strong>Subject:</strong> Genetics & Evolution</p>
+                        <p><strong>Pages:</strong> 38</p>
+                        <p><strong>Author:</strong> Dr. Mehta</p>
+                    </div>
+                    <div class="agreement">
+                        <p>By checking the box below, you agree to pay ₹1 for downloading this note.</p>
+                    </div>
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="agree3" class="agree-checkbox">
+                        <label for="agree3">I agree to pay ₹1 for this download</label>
+                    </div>
+                    <button class="download-btn" id="download3" disabled>
+                        <i class="fas fa-download"></i> Download PDF
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 Study Notes Repository. All rights reserved.</p>
+        <p>Quality educational resources for everyone</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set up event listeners for all checkboxes
+            const checkboxes = document.querySelectorAll('.agree-checkbox');
+            
+            checkboxes.forEach((checkbox, index) => {
+                checkbox.addEventListener('change', function() {
+                    const downloadButton = document.getElementById(`download${index + 1}`);
+                    downloadButton.disabled = !this.checked;
+                });
+            });
+            
+            // Set up download buttons
+            const downloadButtons = document.querySelectorAll('.download-btn');
+            
+            downloadButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    if (!this.disabled) {
+                        alert('Thank you for your payment of ₹1. Your download will start shortly.');
+                        // In a real implementation, this would trigger the actual download
+                        // For demo purposes, we'll just show a success message
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
