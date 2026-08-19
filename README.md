@@ -1,2 +1,2 @@
 # kaalkrit.github.io
-This personal webpage of Roshan Raj. He is a Physics Student.
+This is a personal webpage of Roshan Raj.
