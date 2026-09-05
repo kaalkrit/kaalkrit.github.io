@@ -206,3 +206,14 @@ nav ul li a:hover, .dropdown:hover .dropbtn {
   text-decoration: none;
   font-weight: bold;
 }
+details summary {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 0.9em;
+    opacity: 0.65;
+}
+
+details summary:hover {
+    opacity: 1;
+}
